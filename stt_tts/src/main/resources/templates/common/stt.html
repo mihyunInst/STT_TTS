@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stt</title>
+</head>
+<body>
+    <div>
+        <h2>STT(Speech To Text)</h2>
+      
+        <button id="startRecording">Start Recording</button>
+        <button id="stopRecording" disabled>Stop Recording</button><br/>
+        <audio id="audioPlayback" controls></audio>
+
+        <br>
+
+        <input type="text" id="result"></input>
+        <button id="sendBtn">전송</button>
+   
+
+
+        
+    </div>
+
+    
+    <script src="/js/stt.js"></script>
+</body>
+</html>

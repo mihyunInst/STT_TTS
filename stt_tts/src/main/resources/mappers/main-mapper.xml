@@ -2,4 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.newtec.demo.main.model.mapper.MainMapper">
 	
+	<insert id="sendMessage">
+		INSERT INTO "STT_BOARD"
+		VALUES(SEQ_STT_NO.NEXTVAL, #{message})
+	</insert>
 </mapper>
